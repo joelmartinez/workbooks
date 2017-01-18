@@ -1,0 +1,107 @@
+---
+uti: com.xamarin.workbook
+platforms:
+- Console
+---
+
+```csharp
+var epoch = new DateTime(1970,1,1,0,0,0,0,System.DateTimeKind.Utc);
+var date = epoch.AddSeconds (new Random().NextDouble() * 2000000000).ToLocalTime();
+```
+
+Short Date
+
+```csharp
+date.ToString("d")
+```
+
+Long Date
+
+```csharp
+date.ToString("D")
+```
+
+Full date/short time
+
+```csharp
+date.ToString("f")
+```
+
+Full date/long time
+
+```csharp
+date.ToString("F")
+```
+
+General date/short time
+
+```csharp
+date.ToString("g")
+```
+
+General date/long time
+
+```csharp
+date.ToString("G")
+```
+
+Month/Day
+
+```csharp
+date.ToString("m") // "M"
+```
+
+Round trip date/time
+
+```csharp
+date.ToString("o") // "O"
+```
+
+RFC1123
+
+```csharp
+date.ToString("r") // "R"
+```
+
+Sortable
+
+```csharp
+date.ToString("s")
+```
+
+Short Time
+
+```csharp
+date.ToString("t")
+```
+
+Long Time
+
+```csharp
+date.ToString("T")
+```
+
+Universal sortable date/time
+
+```csharp
+date.ToString("u")
+```
+
+Universal full date/time
+
+```csharp
+date.ToString("U")
+```
+
+Year month
+
+```csharp
+date.ToString("y") // Y
+```
+
+Month
+
+```csharp
+date.ToString("MMMM")
+```
+

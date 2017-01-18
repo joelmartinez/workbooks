@@ -1,0 +1,57 @@
+---
+uti: com.xamarin.workbook
+platforms:
+- Console
+---
+
+First we get a number
+
+```csharp
+var random = new Random();
+var number = random.NextDouble() + random.NextDouble() * 100;
+```
+
+Exponential notation
+
+```csharp
+number.ToString("E")
+```
+
+Currency
+
+```csharp
+number.ToString("C")
+```
+
+Fixed point
+
+```csharp
+number.ToString("F")
+```
+
+General
+
+```csharp
+number.ToString("G")
+```
+
+Number
+
+```csharp
+number.ToString("N")
+```
+
+Percent
+
+```csharp
+number.ToString("P")
+```
+
+Hexadecimal (integer types only)
+
+```csharp
+1234.ToString("X")
+```
+
+
+
